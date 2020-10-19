@@ -7,6 +7,8 @@ let promptBox = document.getElementById('prompt');
 var timer, counter = 0, numError, accuracy, totalTyped = 0, correctTyped = 0, currPrompt;
 var currentInput, currentInputArray, timeLeft, wpm;
 
+
+
 function resetTest() {
     stopTimer();
     resetValues();
@@ -35,7 +37,7 @@ function getPrompt() {
     var p5 = "But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, " +
         "or one who avoids a pain that produces no resultant pleasure?";
     var p6 = "In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do " +
-        "what we like best, every pleasure is to be welcomed and every pain avoided";
+        "what we like best, every pleasure is to be welcomed and every pain avoided.";
     var p7 = "But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently " +
         "occur that pleasures have to be repudiated and annoyances accepted.";
     var p8 = "The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure " +
@@ -86,8 +88,15 @@ function processCurrentInput() {
     accuracyOutput.textContent = accuracy;
 
 
-    if (endQuote || timerOutput.textContent === '0') {
-        wpm = correctTyped / 5;
+    if (endQuote) {
+        timeLeft = timerOutput.textContent.substring(0,2);
+        if(Number(timeLeft) >= 30){
+            wpm = (totalTyped / 5) / 0.5;
+        } else if(Number(timeLeft) >= 15){
+            wpm = (totalTyped / 5) / .75;
+        } else {
+            wpm = totalTyped / 5;
+        }
         stopTimer();
         getPrompt();
         alert('CONGRATULATIONS, YOU CAN TYPE ' + Math.round(wpm) + ' WORDS PER MINUTE!!');
