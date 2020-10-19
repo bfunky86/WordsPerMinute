@@ -1,0 +1,121 @@
+body {
+    background-color: lightsalmon;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body h1 {
+    text-align: center;
+}
+
+.stats {
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 250px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stats hr {
+    margin-left: -60px;
+    margin-bottom: 20px;
+    width: 215%;
+    background-color: orange;
+    height: 2px;
+    border: none;
+}
+
+.misspelled {
+    width: 100px;
+    height: 100px;
+    padding: 20px 80px 20px 80px;
+    border: 2px solid orange;
+    border-radius: 12px;
+    background-color: lightcoral;
+    float: left;
+    margin-right: 50px;
+}
+
+.timer {
+    width: 100px;
+    height: 100px;
+    padding: 20px 80px 20px 80px;
+    border: 2px solid orange;
+    border-radius: 12px;
+    background-color: lightcoral;
+    float: left;
+    margin-right: 50px;
+}
+
+.accuracy {
+    width: 100px;
+    height: 100px;
+    padding: 20px 80px 20px 80px;
+    border: 2px solid orange;
+    border-radius: 12px;
+    background-color: lightcoral;
+    float: left;
+    margin-right: 50px;
+}
+
+.output {
+    font-size: 28px;
+}
+
+.promptBox {
+    margin-top: 20px;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    padding-top: 30px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid orange;
+    background-color: lightcoral;
+    border-radius: 12px;
+    color: black;
+}
+
+.input {
+    margin-top: 20px;
+    margin-left: 275px;
+    border: 2px solid orange;
+    border-radius: 12px;
+    width: 790px;
+    height: 110px;
+}
+
+.typeArea {
+    width: 750px;
+    height: 80px;
+    background-color: lightcoral;
+    padding: 30px 20px 0px 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    resize: none;
+    border: none;
+}
+
+.resetButton {
+    width: 100px;
+    position: fixed;
+    top: 300px;
+    height: 75px;
+    font-weight: bold;
+    border-radius: 12px;
+    outline: none;
+    background-color: black;
+    color: orange;
+}
+
+.incorrect_char { 
+    color: red; 
+    text-decoration: underline; 
+  } 
+    
+.correct_char { 
+    color: white; 
+ } 

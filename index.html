@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css\index.css">
+        <script src="scripts/main.js" async></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
+    </head>
+    <body>
+        <h1>Simple Typing Test</h1>
+        <div class="stats">
+            <div class="misspelled">
+                <label># of Errors</label>
+                <hr>
+                <label class="output" id="numError"></label>
+            </div>
+            <div class="timer">
+                <label>Timer</label>
+                <hr>
+                <label class="output" id="timer"></label>
+            </div>
+            <div class="accuracy">
+                <label>Accuracy</label>
+                <hr>
+                <label class="output" id="accuracy"></label>
+            </div>
+        </div>
+        <button class="resetButton" id="resetButton">RESET</button>
+        <div class="promptBox">
+            <label id='prompt'></label>
+        </div>
+        <div class="input">
+            <textarea class="typeArea" id="inputText" placeholder="Click here to start the timer..."></textarea>
+        </div>
+    </body>
+</html>
